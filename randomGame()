@@ -1,0 +1,15 @@
+function randomGame() {
+  let counter = 0; // Initialize a counter to keep track of tries
+
+  const intervalId = setInterval(function() {
+    const randomNumber = Math.random(); // Generate a random number between 0 and 1
+    counter++; // Increment the counter
+
+    console.log(randomNumber); // Log the random number
+
+    if (randomNumber > 0.75) {
+      clearInterval(intervalId); // Stop the timer when the condition is met
+      console.log(`It took ${counter} tries to find a number greater than 0.75.`);
+    }
+  }, 1000); // Repeat every 1000 milliseconds (1 second)
+}
