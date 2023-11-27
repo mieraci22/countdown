@@ -13,3 +13,7 @@ function randomGame() {
     }
   }, 1000); // Repeat every 1000 milliseconds (1 second)
 }
+
+
+//improvements
+//Consider introducing a maxTries parameter to limit the number of attempts and provides feedback if the maximum number of tries is reached.
